@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style>
+        .btn {
+            cursor:pointer;
+        }
+        .display-4 {
+            font-weight:400;
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="mt-5">Shakespeare Insult Generator</h1>
+
+                <p class="mt-4">
+                    <button type="button" class="btn btn-primary btn-lg" id="go">Insult me!</button>
+                </p>
+
+                <p class="display-4 m-5 text-danger">
+                    <strong id="insult"></strong>
+                </p>
+
+                <table class="table mt-5">
+                    <thead>
+                        <tr>
+                        <th>A little from column A,</th>
+                        <th>a column B,</th>
+                        <th>and volumn C</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="i1">artless</td>
+                            <td class="i2">base-court</td>
+                            <td class="i3">apple-john</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">bawdy</td>
+                            <td class="i2">bat-fowling</td>
+                            <td class="i3">baggage</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">beslubbering</td>
+                            <td class="i2">beef-witted</td>
+                            <td class="i3">barnacle</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">bootless</td>
+                            <td class="i2">beetle-headed</td>
+                            <td class="i3">bladder</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">churlish</td>
+                            <td class="i2">boil-brained</td>
+                            <td class="i3">boar-pig</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">cockered</td>
+                            <td class="i2">clapper-clawed</td>
+                            <td class="i3">bugbear</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">clouted</td>
+                            <td class="i2">clay-brained</td>
+                            <td class="i3">bum-bailey</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">craven</td>
+                            <td class="i2">common-kissing</td>
+                            <td class="i3">canker-blossom</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">currish</td>
+                            <td class="i2">crook-pated</td>
+                            <td class="i3">clack-dish</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">dankish</td>
+                            <td class="i2">dismal-dreaming</td>
+                            <td class="i3">clotpole</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">dissembling</td>
+                            <td class="i2">dizzy-eyed</td>
+                            <td class="i3">coxcomb</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">droning</td>
+                            <td class="i2">doghearted</td>
+                            <td class="i3">codpiece</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">errant</td>
+                            <td class="i2">dread-bolted</td>
+                            <td class="i3">death-token</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">fawning</td>
+                            <td class="i2">earth-vexing</td>
+                            <td class="i3">dewberry</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">fobbing</td>
+                            <td class="i2">elf-skinned</td>
+                            <td class="i3">flap-dragon</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">froward</td>
+                            <td class="i2">fat-kidneyed</td>
+                            <td class="i3">flax-wench</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">frothy</td>
+                            <td class="i2">fen-sucked</td>
+                            <td class="i3">flirt-gill</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">gleeking</td>
+                            <td class="i2">flap-mouthed</td>
+                            <td class="i3">foot-licker</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">goatish</td>
+                            <td class="i2">fly-bitten</td>
+                            <td class="i3">fustilarian</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">gorbellied</td>
+                            <td class="i2">folly-fallen</td>
+                            <td class="i3">giglet</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">impertinent</td>
+                            <td class="i2">fool-born</td>
+                            <td class="i3">gudgeon</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">infectious</td>
+                            <td class="i2">full-gorged</td>
+                            <td class="i3">haggard</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">jarring</td>
+                            <td class="i2">guts-griping</td>
+                            <td class="i3">harpy</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">loggerheaded</td>
+                            <td class="i2">half-faced</td>
+                            <td class="i3">hedge-pig</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">lumpish</td>
+                            <td class="i2">hasty-witted</td>
+                            <td class="i3">horn-beast</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">mammering</td>
+                            <td class="i2">hedge-born</td>
+                            <td class="i3">hugger-mugger</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">mangled</td>
+                            <td class="i2">hell-hated</td>
+                            <td class="i3">joithead</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">mewling</td>
+                            <td class="i2">idle-headed</td>
+                            <td class="i3">lewdster</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">paunchy</td>
+                            <td class="i2">ill-breeding</td>
+                            <td class="i3">lout</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">pribbling</td>
+                            <td class="i2">ill-nurtured</td>
+                            <td class="i3">maggot-pie</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">puking</td>
+                            <td class="i2">knotty-pated</td>
+                            <td class="i3">malt-worm</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">puny</td>
+                            <td class="i2">milk-livered</td>
+                            <td class="i3">mammet</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">qualling</td>
+                            <td class="i2">motley-minded</td>
+                            <td class="i3">measle</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">rank</td>
+                            <td class="i2">onion-eyed</td>
+                            <td class="i3">minnow</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">reeky</td>
+                            <td class="i2">plume-plucked</td>
+                            <td class="i3">miscreant</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">roguish</td>
+                            <td class="i2">pottle-deep</td>
+                            <td class="i3">moldwarp</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">ruttish</td>
+                            <td class="i2">pox-marked</td>
+                            <td class="i3">mumble-news</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">saucy</td>
+                            <td class="i2">reeling-ripe</td>
+                            <td class="i3">nut-hook</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">spleeny</td>
+                            <td class="i2">rough-hewn</td>
+                            <td class="i3">pigeon-egg</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">spongy</td>
+                            <td class="i2">rude-growing</td>
+                            <td class="i3">pignut</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">surly</td>
+                            <td class="i2">rump-fed</td>
+                            <td class="i3">puttock</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">tottering</td>
+                            <td class="i2">shard-borne</td>
+                            <td class="i3">pumpion</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">unmuzzled</td>
+                            <td class="i2">sheep-biting</td>
+                            <td class="i3">ratsbane</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">vain</td>
+                            <td class="i2">spur-galled</td>
+                            <td class="i3">scut</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">venomed</td>
+                            <td class="i2">swag-bellied</td>
+                            <td class="i3">skainsmate</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">villainous</td>
+                            <td class="i2">tardy-gaited</td>
+                            <td class="i3">strumpet</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">warped</td>
+                            <td class="i2">tickle-brained</td>
+                            <td class="i3">varlot</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">wayward</td>
+                            <td class="i2">toad-spotted</td>
+                            <td class="i3">vassal</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">weedy</td>
+                            <td class="i2">unchin-snouted</td>
+                            <td class="i3">whey-face</td>
+                        </tr>
+                        <tr>
+                            <td class="i1">yeasty</td>
+                            <td class="i2">weather-bitten</td>
+                            <td class="i3">wagtail</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script>
+;(function() {
+var max = document.getElementsByTagName('tr').length
+
+getRow = function() {
+    return Math.floor(Math.random() * max) + 1;
+}
+
+displayInsult = function() {
+    $("td").removeClass("table-danger");
+    iOne = $("tr:nth-child("+getRow()+") .i1");
+    iTwo = $("tr:nth-child("+getRow()+") .i2");
+    iThree = $("tr:nth-child("+getRow()+") .i3");
+
+    if(!iOne.length || !iTwo.length || !iThree.length) {
+        return displayInsult();
+    }
+
+    intro = iOne.text();
+    intro = intro.charAt(0).toUpperCase() + intro.slice(1);
+    str = intro+', '+iTwo.text()+' '+iThree.text();
+    $("#insult").text(str);
+
+    iOne.addClass("table-danger");
+    iTwo.addClass("table-danger");
+    iThree.addClass("table-danger");
+}
+
+document.getElementById("go").addEventListener("click", displayInsult);
+
+})();
+</script>
+  </body>
+</html>
